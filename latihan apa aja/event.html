@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <button id="btn">Pencet akuh</button>
+    <p id="hasil"></p>
+    
+    <div id="kotak" style="width: 150px; height: 150px ;background-color: aqua;"></div>
+    <p id="hasilover"></p>
+    <input type="text" id="inp" placeholder="Ketik sesuatu coba..">
+    <p id="hasilkey"></p>
+    <script>
+        const tombol = document.getElementById('btn')
+        const hasil = document.getElementById('hasil')
+        tombol.onclick = () => hasil.textContent = "Aduh kepencet"
+        kotak = document.getElementById("kotak")
+        hasilover = document.getElementById("hasilover")
+            kotak.onmouseover = () => {
+                hasilover.textContent = "aduh ketahuuan.."
+                kotak.style.background = "red"
+            }
+            kotak.onmouseout = () => {
+                hasilover.textContent="ayo cari aku"
+                kotak.style.background = "lightblue"
+            }
+            inputkey = document.getElementById('inp')
+            hasilkey = document.getElementById('hasilkey')
+
+            inputkey.onkeyup = (event) => {
+                hasilkey.textContent = 'Tombol dilepas : '  + event.key;
+            };
+
+    </script>
+
+</body>
+</html>

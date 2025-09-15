@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <div class="pala"><h1>PEMESANAN</h1></div>
+     <div class="nb">
+          <ul>
+            <li class="home"><a href="halutama.html">Home</a></li>
+            <li class="Menu"><a href="menu.html">Menu</a></li>  
+            <li class="Pesan"><a href="pemesana.html">Pemesanan</a></li>
+          </ul>
+        </div>
+    <div class="aksi">
+        <form class="formnama" action="thanksaksi.html" method="get">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required>
+    <br><br>
+
+    <p>Jenis Kelamin:</p>
+    <input type="radio" id="laki" name="gender" value="Laki-laki" required>
+    <label for="laki">Laki-laki</label>
+    <input type="radio" id="cewe" name="gender" value="Perempuan">
+    <label for="cewe">Perempuan</label>
+    <br><br>
+
+     <label for="menu">Pilih Menu:</label>
+    <select id="menu" name="menu" required>
+      <option value="">-- Pilih Menu --</option>
+      <option value="matcha">Matcha</option>
+      <option value="latte">Coffe Latte</option>
+      <option value="espresso">Coffe Espresso</option>
+    </select>
+    <br><br>
+    
+    <p>Pilihan Penyajian:</p>
+        <input type="checkbox" id="hot" name="penyajian" value="Hot">
+            <label for="hot">Hot</label>
+
+        <input type="checkbox" id="ice" name="penyajian" value="Ice">
+            <label for="ice">Ice</label>
+
+        <input type="checkbox" id="lessice" name="penyajian" value="Less Ice">
+            <label for="lessice">Less Ice</label>
+<br><br>
+
+<label for="catatan">Catatan:</label><br>
+    <textarea id="catatan" name="catatan" rows="4" cols="40" placeholder="contoh :porsinya banyakin"></textarea>
+    <br><br>
+
+    <button type="submit">Kirim</button>
+  </form>
+    </div>
+<footer class="footer">
+            &copy; 2025 Warblox Coffee Shop. All rights reserved.
+        </footer>
+</body>
+</html>
